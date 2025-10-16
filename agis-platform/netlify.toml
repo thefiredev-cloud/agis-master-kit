@@ -1,5 +1,6 @@
 
 [build]
+  base = "agis-platform"
   command = "npm ci && npm run build"
   publish = ".next"
 
