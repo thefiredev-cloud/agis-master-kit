@@ -1,0 +1,37 @@
+flowchart LR
+subgraph Tenant["Tenant Workspace"]
+    A["Agent Instance
+(Tenant-scoped)"] --> B["Event Inbox
+(queue / bus)"]
+    B --> C{"Trigger?
+(schedule/webhook/stream)"}
+    C -->|"Schedule"| D["Cron / Scheduler"]
+    C -->|"Webhook"| E["API Gateway"]
+    C -->|"Stream"| F["Kafka / PubSub"]
+end
+D --> G["Planner
+(task graph)"]
+E --> G
+F --> G
+G --> H["Executors Pool
+(Workers / Serverless)"]
+H --> I{"Needs Tools?"}
+I -->|"Yes"| J["Connectors
+(Google, Slack, Stripe, GitHub, Notion)"]
+I -->|"No"| K["Model Invoke
+(OpenAI/Anthropic/etc.)"]
+J --> K
+K --> L["Memory & State
+(Vector DB + KV)"]
+L --> M["Policy Guardrails
+(PII, Rate, Budget)"]
+M --> N["Outputs
+(Actions, Callbacks)"]
+N --> O["Audit Log"]
+O --> P["Observability
+(Logs/Metrics/Traces)"]
+P --> Q["Alerts
+(Pager/Slack/Email)"]
+Q --> R["Human Review"]
+R --> S["Replay / Rollback"]
+S --> H

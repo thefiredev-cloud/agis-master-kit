@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3BA0FF"/>
+      <stop offset="100%" stop-color="#7AE2B3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="#FFFFFF"/>
+  <g transform="translate(60,70)">
+    <rect x="0" y="0" width="120" height="120" rx="24" fill="url(#g)"/>
+    <circle cx="60" cy="35" r="10" fill="#121923"/>
+    <rect x="40" y="60" width="40" height="10" rx="5" fill="#121923"/>
+    <rect x="30" y="80" width="60" height="10" rx="5" fill="#121923"/>
+    <rect x="20" y="100" width="80" height="10" rx="5" fill="#121923"/>
+    <text x="160" y="55" font-family="Inter,Segoe UI,Arial" font-size="72" font-weight="700" fill="#0B0F14">AGIS</text>
+    <text x="160" y="110" font-family="Inter,Segoe UI,Arial" font-size="28" fill="#3C4A57">Artificial General Intelligence as a Service</text>
+  </g>
+</svg>

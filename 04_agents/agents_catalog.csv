@@ -1,0 +1,21 @@
+Category,Agent Name,Description,Connectors,Triggers,KPIs
+Coding,Code Refactorer,"Refactors repo modules, updates docs, opens PRs.",github,schedule/webhook,"Merged PRs, lint/CI pass rate"
+Coding,Spec-to-Scaffold,Converts spec tickets into repo scaffolds with tests.,github,webhook,Lead time reduced
+Coding,PR Reviewer,LLM-assisted code review and SAST hints.,github,webhook,"Defect density, review time"
+Coding,Dependency Sentinel,"Monitors CVEs, opens version-bump PRs.",github,schedule,Vuln MTTR
+Coding,Docs Syncer,Syncs code comments → docs site/Notion.,"github, notion",schedule,Docs freshness
+Admin/Ops,Approvals Router,Routes expense/leave approvals via Slack + email.,"slack, gmail",webhook,Approval latency
+Admin/Ops,Calendar Concierge,"Lays out meeting options, resolves conflicts.",google,webhook,Scheduling success
+Admin/Ops,Vendor Intake,"Reads PDFs/forms, creates vendor records.","google, notion",webhook,Onboarding time
+Admin/Ops,Ticket Triage,"Sorts inbound tickets, tags, assigns.","slack, github",webhook,First response time
+Admin/Ops,Ops Runbook,Detects alerts → runs scripted automations.,"pagerduty, macos_automator",stream,Auto-resolve rate
+Analytics,KPI Pipeline,Ingests CSV/DB → computes KPIs/dashboards.,supabase,schedule,Pipeline freshness
+Analytics,Forecaster,Time-series forecasts for revenue/usage.,supabase,schedule,MAE/MAPE
+Analytics,Experiment Analyst,AB test analysis and recommendations.,supabase,schedule,Uplift CI
+Analytics,Churn Watch,Flags churn risk cohorts; triggers outreach.,"stripe, supabase",schedule,Net retention
+Analytics,Unit Economics,CAC/LTV/Payback analysis by segment.,"stripe, supabase",schedule,Payback days
+Marketing/Creative,Campaign Builder,Generates multi-channel campaigns + calendars.,"slack, notion",schedule,CTR/CVR
+Marketing/Creative,SEO/AEO Optimizer,Optimizes pages for search and agents.,"netlify, chrome-devtools",schedule,"Core Web Vitals, rankings"
+Marketing/Creative,Content Studio,Brief → outlines → drafts → assets.,notion,schedule,Publish cadence
+Marketing/Creative,Outbound Prospector,"Builds ICP lists, drafts emails.",gmail,schedule,Reply rate
+Marketing/Creative,Release Notes,Aggregates merged PRs into customer-facing notes.,"github, netlify",schedule,Release cadence

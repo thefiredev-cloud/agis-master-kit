@@ -1,0 +1,22 @@
+[
+  {
+    "fileName": "main-overview.mdc",
+    "description": "Complete system overview covering the agent orchestration architecture, multi-tenant design, and high-level component interactions"
+  },
+  {
+    "fileName": "agent-data-models.mdc",
+    "description": "Detailed documentation of agent data models, including category classifications, capabilities, connector requirements, trigger mechanisms, and KPI definitions"
+  },
+  {
+    "fileName": "agent-orchestration-flow.mdc",
+    "description": "Comprehensive documentation of the agent execution pipeline, including budget controls, PII handling, approval workflows, and tool call routing"
+  },
+  {
+    "fileName": "tenant-isolation-model.mdc",
+    "description": "Detailed specification of the multi-tenant security model, including resource isolation, budget controls, and usage tracking algorithms"
+  },
+  {
+    "fileName": "billing-computation-model.mdc",
+    "description": "Documentation of the usage-based billing system, including pricing formulas, metering mechanisms, and real-time usage calculations"
+  }
+]

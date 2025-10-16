@@ -1,0 +1,43 @@
+flowchart LR
+A["Landing Page
+(Hero, Value Prop, Social Proof, CTA)"] --> B["Sign in / Sign up (Clerk)"]
+A --> C["Product Overview
+(How AGIS works)"]
+A --> D["Pricing & Plans
+(Starter / Pro / Enterprise)"]
+A --> E["Docs & Compliance
+(Accessibility, SOC2, HIPAA opt)"]
+B --> F["Dashboard Home
+(Overview + Quick Starts)"]
+F --> G["Agent Catalog
+(Filter by: Coding, Admin, Analytics, Marketing/Creative)"]
+F --> H["My Agents
+(Instances, Health, Usage)"]
+F --> I["Activity Feed
+(Events, Alerts)"]
+F --> J["Billing & Usage
+(Stripe, Seats, Limits)"]
+G --> K["Agent Card
+(Plain-language summary, Scopes, Connectors, Pricing)"]
+K --> L["Connect Accounts
+(Google, Slack, Stripe, Notion, GitHub, etc.)"]
+L --> M["Configure
+(Inputs, Permissions, Schedules, Webhooks)"]
+M --> N["Provision Instance
+(Create tenant-scoped agent)"]
+N --> O["Run Loop
+(Triggers: schedule, webhook, event bus)"]
+O --> P["Observability
+(Logs, Metrics, Traces)"]
+O --> Q["Human-in-the-Loop
+(Approve/Reject, Replay)"]
+Q --> I
+P --> I
+J --> R["Plan Upgrades / Add-ons"]
+E --> S["Security Center
+(Audit log, Key Vault)"]
+H --> T["Agent Detail
+(Version, Config, Secrets)"]
+T --> U["Rotate Secrets
+(Vault)"]
+T --> V["Pause/Resume/Scale"]

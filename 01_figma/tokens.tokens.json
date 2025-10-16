@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "tokens": {
+    "color": {
+      "bg": {
+        "value": "#0B0F14",
+        "type": "color"
+      },
+      "surface": {
+        "value": "#121923",
+        "type": "color"
+      },
+      "surfaceAlt": {
+        "value": "#16202B",
+        "type": "color"
+      },
+      "primary": {
+        "value": "#3BA0FF",
+        "type": "color"
+      },
+      "accent": {
+        "value": "#7AE2B3",
+        "type": "color"
+      },
+      "text.primary": {
+        "value": "#E6EDF3",
+        "type": "color"
+      },
+      "text.secondary": {
+        "value": "#A9B4C0",
+        "type": "color"
+      },
+      "border": {
+        "value": "#263341",
+        "type": "color"
+      }
+    },
+    "radius": {
+      "card": {
+        "value": "16",
+        "type": "radius"
+      },
+      "button": {
+        "value": "10",
+        "type": "radius"
+      }
+    },
+    "space": {
+      "xs": {
+        "value": "4",
+        "type": "spacing"
+      },
+      "sm": {
+        "value": "8",
+        "type": "spacing"
+      },
+      "md": {
+        "value": "16",
+        "type": "spacing"
+      },
+      "lg": {
+        "value": "24",
+        "type": "spacing"
+      },
+      "xl": {
+        "value": "40",
+        "type": "spacing"
+      }
+    },
+    "shadow": {
+      "card": {
+        "value": "0 8 24 0 rgba(0,0,0,0.10)",
+        "type": "boxShadow"
+      }
+    },
+    "font": {
+      "heading.family": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      },
+      "body.family": {
+        "value": "Inter",
+        "type": "fontFamilies"
+      }
+    }
+  }
+}

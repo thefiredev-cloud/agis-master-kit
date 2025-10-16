@@ -1,0 +1,9 @@
+Goal: {{GOAL}}
+Tenant: {{TENANT_SLUG}} (id: {{TENANT_ID}})
+Agents available: {{AGENT_KEYS}}
+Connectors enabled: {{CONNECTORS}}
+Run budget (USD): {{RUN_BUDGET_USD}}
+Constraints: {{CONSTRAINTS}}
+
+Please respond in the STRUCTURED OUTPUT JSON only.
+Start in PLAN phase.
