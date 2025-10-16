@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* AGIS Brand Colors */
+:root {
+  --bg: #0B0F14;
+  --surface: #121923;
+  --surface-alt: #16202B;
+  --primary: #3BA0FF;
+  --accent: #7AE2B3;
+  --warn: #FFB020;
+  --error: #FF7A7A;
+  --text-primary: #E6EDF3;
+  --text-secondary: #A9B4C0;
+  --text-muted: #6B7785;
+  --border: #263341;
+}
+
+@theme inline {
+  /* Background & Surface Colors */
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  
+  /* Brand Colors */
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-warn: var(--warn);
+  --color-error: var(--error);
+  
+  /* Text Colors */
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  
+  /* Border */
+  --color-border: var(--border);
+  
+  /* Fonts */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --font-mono: 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo', monospace;
+  
+  /* Focus Ring (Accessibility) */
+  --focus-ring-color: var(--primary);
+  --focus-ring-width: 2px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus Styles (WCAG Compliant) */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
